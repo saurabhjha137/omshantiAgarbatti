@@ -1,3 +1,29 @@
+.marquee {
+  background-color: #f9f9f9;
+  overflow: hidden;
+  height: 40px;
+}
+
+.marquee p {
+  display: inline-block;
+  margin: 0;
+  padding: 10px 20px;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+
+
 body {
   font-family: "Poppins", sans-serif;
   color: #040000;
